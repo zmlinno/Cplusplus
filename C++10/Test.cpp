@@ -11,10 +11,11 @@ void Test_String01()
 	cout << s1.length() << endl;
 
 	cout << s1.max_size() << endl;
+	//åœ¨è¿™ä¸ªåœ°æ–¹æ˜¯å½“å‰æœ€å¤§çš„å†…å­˜æ•°å€¼å¯ä»¥å­˜å¤šå°‘
 	cout << s1.capacity() << endl;
 
 
-	//²é¿´À©ÈÝ»úÖÆ
+	//æŸ¥çœ‹æ‰©å®¹æœºåˆ¶
 	string s;
 	s.reserve(100);
 
@@ -41,7 +42,7 @@ void Test_String01()
 	cout << s1.size() << endl;
 
 
-	//ËõÈÝ
+	//ç¼©å®¹
 	s1.shrink_to_fit();
 	cout << s1.capacity() << endl;
 	cout << s1.size() << endl;
@@ -59,7 +60,7 @@ void test_string4()
 	cout << s1.max_size() << endl;
 	cout << s1.capacity() << endl;
 
-	// ²é¿´À©ÈÝ»úÖÆ
+	// æŸ¥çœ‹æ‰©å®¹æœºåˆ¶
 	string s;
 	s.reserve(100);
 
@@ -86,7 +87,7 @@ void test_string4()
 	cout << s1.capacity() << endl;
 	cout << s1.size() << endl;
 
-	// ËõÈÝ
+	// ç¼©å®¹
 	s1.shrink_to_fit();
 	cout << s1.capacity() << endl;
 	cout << s1.size() << endl;
@@ -102,7 +103,7 @@ void Test_String05()
 	cout << s1.capacity() << endl;
 	//cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl;
 
-	//±Èµ±Ç°capacity´ó²Å»áÀ©ÈÝ
+	//æ¯”å½“å‰capacityå¤§æ‰ä¼šæ‰©å®¹
 	s1.reserve(200);
 
 	cout << s1.size() << endl;
@@ -121,8 +122,8 @@ void Test_String05()
 	s2.resize(20);
 	cout << s2.size() << endl;
 	cout << s2.capacity() << endl;
-	//ÔÚÕâÀïµÄ»°,capacityÊÇ²»±äµÄ
-	//µ«ÊÇsize»á·¢Éú±ä»¯
+	//åœ¨è¿™é‡Œçš„è¯,capacityæ˜¯ä¸å˜çš„
+	//ä½†æ˜¯sizeä¼šå‘ç”Ÿå˜åŒ–
 
 
 	s2.resize(100, 'x');
@@ -136,7 +137,7 @@ void Test_String06()
 {
 	string s1("hello world");
 	cout << s1[2] << endl;
-	cout << s1.at(5) << endl;//Õâ¸öÒ»»á²éÒ»ÏÂ
+	cout << s1.at(5) << endl;//è¿™ä¸ªä¸€ä¼šæŸ¥ä¸€ä¸‹
 
 	try
 	{
@@ -152,11 +153,11 @@ void Test_String07()
 {
 	string s1("hello world");
 	s1.push_back('!');
-	//Õâ¸öÊÇÖ±½Ó´ÓºóÃæ¼ÓÈëÒ»¸ö!ºÅ
+	//è¿™ä¸ªæ˜¯ç›´æŽ¥ä»ŽåŽé¢åŠ å…¥ä¸€ä¸ª!å·
 	cout << s1 << endl;
 
 	s1.append("hello bit");
-	//Õâ¸öÒ²ÊÇÔÚºóÃæ¼ÓÈëÕâ¾ä»°
+	//è¿™ä¸ªä¹Ÿæ˜¯åœ¨åŽé¢åŠ å…¥è¿™å¥è¯
 	cout << s1 << endl;
 
 	s1.append(10, 'x');
