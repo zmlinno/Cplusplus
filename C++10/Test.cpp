@@ -19,7 +19,7 @@ void Test_String01()
 	string s;
 	s.reserve(100);
 
-	size_t sz = s.capacity();
+	size_t sz = s.capacity();//就会扩成比当前还要大的
 	cout << "capacity changed: " << sz << endl;
 	cout << "making s grow:\n ";
 
