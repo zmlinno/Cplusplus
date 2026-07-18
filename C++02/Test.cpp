@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 //类和对象中
-
+//的
 // struct A
 // {
 //     private:
