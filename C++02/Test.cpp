@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//好的
 //类和对象中
 //的
 // struct A
